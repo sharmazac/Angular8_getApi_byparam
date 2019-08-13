@@ -1,0 +1,44 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+
+  <table>
+   <tr>
+     <th>1</th>
+     <th>2</th>
+     <th>3</th>
+     <th>4</th>
+    
+   </tr>
+   <tr *ngFor= "let employee of lstemployee">
+     <td>{{employee.userId}}</td>
+     <td>{{employee.id}}</td>
+     <td>{{employee.title}}</td>
+     <td>{{employee.completed}}</td>
+     
+   </tr>
+
+
+  </table>
+
+
+  <h1> Get data by parameter</h1>
+
+  <table>
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+    </tr>
+    <tr *ngFor= "let posts of posts" >
+      <td>{{posts.userId}}</td>
+      <td>{{posts.id}}</td>
+      <td>{{posts.title}}</td>
+      <td>{{posts.body}}</td>
+    </tr>
+  </table>
+
